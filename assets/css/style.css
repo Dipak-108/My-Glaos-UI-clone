@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+:root {
+  --dark--Brown--: #291d10;
+  --lignt--Brown--: #77430a;
+  --cream--: #f1c644;
+  --light--cream--: #c09e5f;
+  --nav-text-color--: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#navbar_ul,
+.navbar_icon {
+  display: none;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  font-size: 1rem;
+  color: aliceblue;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.nav_bar a {
+  color: aliceblue;
+}
+
+.hero_div {
+  position: relative;
+  max-height: 100%;
+}
+
+.hero_div img {
+  width: 100%;
+
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hamburger_div {
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hamburger_div:hover {
+  color: var(--lignt--Brown--);
+}
+
+.hero_text {
+  position: absolute;
+  top: 12rem;
+  font-size: 3.5rem;
+  margin: 1.5rem;
+  color: white;
+}
+
+.hero_text button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--dark--Brown--);
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+}
+
+.hero_text button:hover {
+  color: #ffffff;
+  background-color: var(--dark--Brown--);
+}
+
+/* Section painter Section */
+.painting_section {
+  width: 100%;
+  /* margin: 2rem;
+  box-sizing: border-box; */
+  padding: 2rem;
+}
+
+.painting_image_div {
+  width: 100%;
+}
+
+.painting_image_div img {
+  width: 100%;
+  object-fit: cover;
+}
+.painting_text {
+  margin-top: 2.5rem;
+}
+
+.painting_text .painting_onthisday {
+  border-bottom: 1px solid var(--lignt--Brown--);
+  padding: 0.5rem;
+  font: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.painting_text h1 {
+  font-size: 2.5rem;
+  color: var(--lignt--Brown--);
+}
+
+.painting_text h1 + p {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-family: "Playwrite GB S", cursive;
+}
+
+.painting_text button {
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  background-color: var(--lignt--Brown--);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Trending Products Section */
+.trending_prod_buttons{
+  
+  width: fit-content;
+  margin: auto;
+}
+.trending_prod_buttons button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: auto;
+  background:none;
+  border: none;
+  display: inline-block;
+  margin: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.trending_prod_buttons button:hover{
+  background-image: url(../../images/abstract\ brush\ 1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--nav-text-color--);
+}
+
+.trending_products_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 80%;
+  border: 5px solid;
+  padding: 0.5rem;
+}
+
+.card h3 {
+  font-weight: 200;
+  margin-top: 0.5rem;
+}
+.card p {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hamburger_div {
+    display: none;
+  }
+
+  #navbar_ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 5rem;
+  }
+  .page_anchor {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_bar li:hover,
+  .navbar_signin a:hover,
+  .navbar_shop a:hover {
+    color: var(--lignt--Brown--);
+  }
+
+  .navbar_search button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .navbar_icon {
+    display: flex;
+
+    gap: 1.3rem;
+    align-items: center;
+  }
+  .navbar_sign_and_shop,
+  .navbar_sign_and_shop > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar_sign_and_shop {
+    gap: 1rem;
+  }
+  .navbar_sign_and_shop > * {
+    gap: 0.4rem;
+  }
+}

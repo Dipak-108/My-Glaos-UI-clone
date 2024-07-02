@@ -198,6 +198,87 @@ ul {
   font-weight: 600;
 }
 
+/* Collection Of painting Start */
+.col_text{
+  
+    background-image: linear-gradient(to bottom, var(--lignt--Brown--) ,var(--nav-text-color--));
+  padding: 2rem 0rem;
+}
+
+.col_text p{
+  font-size: 1.4rem;
+  color: var(--lignt--Brown--);
+  background-color: var(--nav-text-color--);
+  width: fit-content;
+  /* display: block; */
+  padding: 0.5rem;margin: auto;
+}
+
+.col_text h1{
+  width: fit-content;
+  padding: 1rem;
+  font-weight: 200;
+  font-size: 4rem;
+  color: var(--nav-text-color--);
+margin: auto;
+}
+
+.collection_of_painting .image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: auto;
+  margin: 1rem;
+}
+
+.image-item {
+  background-color: #fff;
+  height: fit-content; 
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-item img:hover{
+  transform: scale(1.2);
+  transition: 0.4s ease-in;
+}
+
+.col_img1,
+.col_img3{
+  padding-top: 1.5rem;
+ }
+
+ .col_img4{
+  width: 80%;
+  margin-left: 1rem;
+ }
+
+ .collection_border_top,
+ .collection_border_bottom{
+  border: 2px solid rgba(241, 198, 68, 1);
+  width: 70%;
+ }
+
+ .collection_border_top{
+  margin-bottom: 1.5rem;
+  margin-left: 30%;
+  /* float: right; */
+ }
+ .collection_border_top{
+
+   background-color: rgba(241, 198, 68, 1);
+ }
+
+
+
+
+
+
 @media (min-width: 768px) {
   .hamburger_div {
     display: none;

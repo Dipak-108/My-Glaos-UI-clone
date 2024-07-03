@@ -350,8 +350,124 @@ margin: auto;
   width: 100%;
  }
 
+ /* Contact Us Section */
+
+ .contact_us_div{
+  margin: 2rem 0 0;
+  position: relative;
+  /* padding: 2rem; */
+ }
+
+ .contact_us_div img{
+  width: 100%;
+  height: 30vh;
+  
+ }
+
+ .contact_us_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ }
+
+ .contact_us_text p{
+  font-size: 2rem;
+  color: var(--nav-text-color--);
+ }
+
+ .contact_us_text button{
+  border: none;
+  background-color: var(--nav-text-color--);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 2rem;
+  /* font-size: 1.1rem; */
+ }
+
+ .scrupture_img{
+  position: absolute;
+  right: 0rem;
+  
+  width: 100px;
+  top: 7rem;
+  
+ }
+
+ .scrupture_img img{
+  width: 100%;
+  cursor: pointer;
+ }
+ .scrupture_img img:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+ }
 
 
+ /* Virtual Exibition Section */
+ .get_in_touch_section{
+  margin: 7rem 0 3rem;
+ }
+
+ .virtual_exibition_text h1{
+  margin: 0rem 2rem;
+  color: var(--lignt--Brown--);
+  font-size: 3rem;
+  font-weight: 100;
+ }
+
+ .virtial_exibition_image_div{
+  margin: 0 2rem;
+  overflow: hidden;
+ }
+ .virtial_exibition_image_div img{
+  width: 100%;
+  cursor: pointer;
+ }
+
+ .virtial_exibition_image_div img:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-out;
+ }
+ .get_in_touch_form h1{
+  margin:3rem 0rem 0.3rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+ }
+ .get_in_touch_border{
+  width: 50%;
+  border: 1.5px solid var(--lignt--Brown--);
+  margin: 0rem 0rem 1rem;
+ }
+
+ .get_in_touch_form {
+  /* border: 2px solid ; */
+  width: 100%;
+  padding: 0rem 2rem;
+ }
+ .get_in_touch_form label{
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  
+  color: var(--lignt--Brown--);
+ }
+
+ .get_in_touch_form input{
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  background-color: rgba(238, 238, 238, 1);
+  border: none;
+ }
+
+ .get_in_touch_form button{
+  border: none;
+  background-color: var(--lignt--Brown--);
+  padding: 0.5rem;
+  color: var(--nav-text-color--);
+  cursor: pointer;
+ }
 
 
 

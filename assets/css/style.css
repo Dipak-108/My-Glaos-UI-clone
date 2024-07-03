@@ -470,6 +470,50 @@ margin: auto;
  }
 
 
+ /* pricing_detail_div */
+
+ .pricing_detail_div{
+  background-image: url(../../images/table_back.png);
+  min-height:47vh ;
+  object-fit: contain;
+  border: solid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: scroll;
+
+  
+ }
+
+ 
+ 
+
+.pricing_detail_div table{
+  border-collapse: collapse;
+  width: 90%;
+  margin: 1rem auto;
+  backdrop-filter: blur(10px);
+  padding: 5rem;
+}
+
+ td,th{
+  border: solid gold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  white-space: nowrap;
+  min-width: max-content;
+  color: var(--nav-text-color--); 
+  text-align: center;
+ }
+
+ td img{
+  width: 100%;
+  cursor: pointer;
+ }
+
+
+
+ 
+
 
 @media (min-width: 768px) {
   .hamburger_div {

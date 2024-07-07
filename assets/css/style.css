@@ -550,13 +550,14 @@ margin: auto;
   }
   
   .navbar_ul.hamburger_active{
-    display: none;
+    all: unset;
   }
-  #navbar_id .navbar_ul {
+  .navbar_ul.navbar_ul {
     display: flex;
     gap: 1rem;
     align-items: center;
     padding-left: 5rem;
+    list-style: none;
   }
 
   
